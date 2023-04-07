@@ -7,3 +7,23 @@
 li{
     list-style: none;
 }
+
+
+.encabezado{
+    padding: 24px;
+    height: 100px;
+    background-color: rgb(57, 58, 74);
+    color: rgb(255, 255, 255);
+    font-family: Ubuntu, sans-serif;
+}
+
+.img-logo{
+    height: 80px;
+}
+
+button{
+    margin: none;
+    background-color: rgb(57, 58, 74);
+    color: rgb(255, 255, 255);
+    border: none;
+}
