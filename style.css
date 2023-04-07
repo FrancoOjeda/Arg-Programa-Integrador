@@ -27,3 +27,41 @@ button{
     color: rgb(255, 255, 255);
     border: none;
 }
+
+.slide-1{
+    background-image: url(./images/slide-1.jpg);
+    background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   height: 864px;
+}
+
+.slide-2{
+    background-image: url(./images/slide-2.jpg);
+    background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   height: 864px;
+}
+
+
+.slide-3{
+    background-image: url(./images/slide-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 864px;
+}
+
+.titulo{
+   color: rgb(255, 255, 255);
+   margin: auto;
+   padding-top: 400px;
+   position: relative; /* Agregamos la propiedad "position" para utilizar z-index */
+   z-index: 1
+}
+
+.title{
+    font-size: 3em;
+    line-height: 1.2;
+}
