@@ -10,9 +10,8 @@
     />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./style.css" />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
       defer
@@ -25,18 +24,20 @@
       src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>valposystems</title>
   </head>
   <body>
     <!-- Encabezado y barra de navegacion -->
-    <header class="row align-items-center encabezado">
+    <header class="row align-items-center encabezado me-0">
       <!--Logo  -->
       <div class="col-3">
         <img src="./images/logo-Normal.png" alt="Logo" class="img-logo" />
       </div>
       <!-- Barra de navegacion -->
       <nav class="col-9">
-        <ul class="row align-items-center">
+        <!-- Posicioné los items del nav con margin 0 -->
+        <ul class="row align-items-center m-0">
           <li class="col">Inicio</li>
           <li class="dropdown col">
             <button
@@ -97,60 +98,86 @@
     <!-- Contenido principal -->
     <main>
       <!-- Portada con redes -->
-      <div>
+      <div class="containerBanner">
         <h1>ValpoSystems</h1>
-        <div>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-instagram"></i>
+        <div class="iconos">
+          <a href="" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-instagram"></i
+          ></a>
         </div>
       </div>
 
       <!-- Seccion de habilidades y productos de Valpo -->
-      <section>
-        <article>
-          <h2>Consultoria</h2>
-          <p>
-            Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
-            caminos en arquitectura orientadas a servicios.
-          </p>
-        </article>
-        <article>
-          <h2>Capacitacion</h2>
-          <p>
-            ValpoSystems Capacitación es un Centro de Formación Profesional que
-            también ofrece a sus clientes cursos TI a medida
-          </p>
-        </article>
-        <article>
-          <h2>Testing y QA</h2>
-          <p>
-            Asegurar que los servicios implementados por nuestros
-            desarrolladores cumplan con los estándares de calidad
-          </p>
-        </article>
-        <article>
-          <h2>Aseguramiento de Calidad</h2>
-          <p>
-            ValpoSystems se basa principalmente en procedimientos que garantizan
-            un producto eficiente
-          </p>
-        </article>
-        <article>
-          <h2>Desarrollo y Mantención de Software</h2>
-          <p>
-            Trabajamos directamente con el cliente, construyendo aplicaciones de
-            alto nivel
-          </p>
-        </article>
-        <article>
-          <h2>Infraestructura y Soporte</h2>
-          <p>
-            Hoy en día gran parte de los recursos del área informática son
-            destinados a la mantención y al soporte técnico
-          </p>
-        </article>
+      <section class="containerFeatures">
+        <h3>ValpoSystems</h3>
+        <h4>
+          Dar un mayor peso a las Tecnologías de la Información en su empresa
+          hace <br />
+          que cobren enorme importancia las infraestructuras y los servicios
+          informáticos.
+        </h4>
+        <div class="containerItems">
+          <article class="celesteUno">
+            <img src="./images/6NKPrhO.png" alt="consultoria" />
+            <h2>Consultoria</h2>
+            <p>
+              Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
+              caminos en arquitectura orientadas a servicios.
+            </p>
+          </article>
+          <article class="rojoDos">
+            <img src="./images/rojo2.png" alt="Capacitación" />
+            <h2>Capacitación</h2>
+            <p>
+              ValpoSystems Capacitación es un Centro de Formación Profesional
+              que también ofrece a sus clientes cursos TI a medida
+            </p>
+          </article>
+          <article class="azulTres">
+            <img src="./images/azul3.png" alt="Testing y QA" />
+            <h2>Testing y QA</h2>
+            <p>
+              Asegurar que los servicios implementados por nuestros
+              desarrolladores cumplan con los estándares de calidad
+            </p>
+          </article>
+          <article class="naranjaCuatro">
+            <img src="./images/naranja4.png" alt="Aseguramiento de Calidad" />
+            <h2>Aseguramiento de Calidad</h2>
+            <p>
+              ValpoSystems se basa principalmente en procedimientos que
+              garantizan un producto eficiente
+            </p>
+          </article>
+          <article class="violetaCinco">
+            <img
+              src="./images/44.png"
+              alt="Desarrolo y  Mantención de Software"
+            />
+            <h2>Desarrollo y Mantención de Software</h2>
+            <p>
+              Trabajamos directamente con el cliente, construyendo aplicaciones
+              de alto nivel
+            </p>
+          </article>
+          <article class="verdeSeis">
+            <img src="./images/verde.png" alt="Infraestructura y Soporte" />
+            <h2>Infraestructura y Soporte</h2>
+            <p>
+              Hoy en día gran parte de los recursos del área informática son
+              destinados a la mantención y al soporte técnico
+            </p>
+          </article>
+        </div>
       </section>
       <!-- Seccion de servicios -->
       <section>

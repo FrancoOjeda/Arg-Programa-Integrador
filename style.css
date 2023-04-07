@@ -11,7 +11,7 @@ li{
 
 .encabezado{
     padding: 24px;
-    height: 100px;
+    height: 150px;
     background-color: rgb(57, 58, 74);
     color: rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
@@ -26,4 +26,116 @@ button{
     background-color: rgb(57, 58, 74);
     color: rgb(255, 255, 255);
     border: none;
+}
+
+.containerBanner{
+    background-image: url("./images/imgbanner.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.containerBanner h1{
+    font-size: 64px;
+}
+
+.containerBanner .iconos{
+    font-size: 22px;
+    text-decoration: none;
+}
+.containerBanner .iconos a{  
+color: white;
+}
+
+.containerFeatures h3, h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.containerFeatures h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.containerItems{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+margin: 72px;
+}
+
+
+.containerItems article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    width: 395px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 25px 0 rgba(20, 27, 202, .17);
+    position: relative;
+    margin-bottom: 48px;
+}
+.containerItems img{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.containerItems p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.containerItems .celesteUno:hover{
+    background: rgb(48,138,160);
+    background: linear-gradient(90deg, rgba(48,138,160,1) 0%, rgba(38,69,122,1) 100%);
+  cursor: pointer;
+  color: white;
+}
+
+.containerItems .rojoDos:hover{
+    background: rgb(254,5,89);
+    background: linear-gradient(90deg, rgba(254,5,89,1) 0%, rgba(245,5,86,1) 100%);
+  cursor: pointer;
+  color: white;
+}
+
+.containerItems .azulTres:hover{
+    background: rgb(52,43,236);
+background: linear-gradient(90deg, rgba(52,43,236,1) 0%, rgba(65,147,247,1) 100%);
+  cursor: pointer;
+  color: white;
+}
+
+.containerItems .naranjaCuatro:hover{
+    background: rgb(245,119,33);
+    background: linear-gradient(90deg, rgba(245,119,33,1) 0%, rgba(253,171,59,1) 100%);
+  cursor: pointer;
+  color: white;
+}
+
+.containerItems .violetaCinco:hover{
+    background: rgb(135,67,250);
+background: linear-gradient(90deg, rgba(135,67,250,1) 0%, rgba(96,84,253,1) 100%);
+  cursor: pointer;
+  color: white;
+}
+
+.containerItems .verdeSeis:hover{
+    background: rgb(40,194,140);
+    background: linear-gradient(90deg, rgba(40,194,140,1) 0%, rgba(33,217,119,1) 100%);
+  cursor: pointer;
+  color: white;
 }
