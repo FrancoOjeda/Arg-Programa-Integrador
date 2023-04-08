@@ -139,3 +139,68 @@ background: linear-gradient(90deg, rgba(135,67,250,1) 0%, rgba(96,84,253,1) 100%
   cursor: pointer;
   color: white;
 }
+
+.containerServices{
+    background-color: #393b4a;
+    padding: 2rem 1rem;
+}
+
+.containerServices{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    color: white;
+    gap: 2rem;
+}
+
+.containerServices div{
+    width: 26rem;
+}
+
+.containerServices p{
+    width: 80%;
+}
+
+.subtitulo {
+    width:35%;
+    font-weight: 300;
+    margin: 32px auto 16px;
+    color: #87877d;
+    font-size: 18px;
+}
+
+.containerNosotros{
+    margin: 6rem 0;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    background-color: #eff4f8;
+}
+
+.sobreNosotros{
+    width: 391px;
+    height: 593px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: white;
+align-items: center;
+}
+
+
+.sobreNosotros  img{
+    width: 192px;
+border-radius: 100%;
+text-align: center;
+}
+
+.nosotrosRedes{
+    color: #393b4a;
+    cursor:pointer;
+}
+
+.nosotrosRedes i:hover{
+    color: black;
+}
