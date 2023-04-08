@@ -10,9 +10,8 @@
     />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./style.css" />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
       defer
@@ -25,18 +24,20 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>valposystems</title>
   </head>
   <body>
     <!-- Encabezado y barra de navegacion -->
-    <header class="row align-items-center encabezado">
+    <header class="row align-items-center encabezado me-0">
       <!--Logo  -->
       <div class="col-3">
         <img src="./images/logo-Normal.png" alt="Logo" class="img-logo" />
       </div>
       <!-- Barra de navegacion -->
       <nav class="col-9">
-        <ul class="row align-items-center">
+        <!-- Posicioné los items del nav con margin 0 -->
+        <ul class="row align-items-center m-0">
           <li class="col">Inicio</li>
           <li class="dropdown col">
             <button
@@ -97,167 +98,189 @@
     <!-- Contenido principal -->
     <main>
       <!-- Portada con redes -->
-      <div class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-block w-100 slide-1"></div>
-          </div>
-          <div class="carousel-item slide-2">
-            <div class="d-block w-100"></div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100 slide-3"></div>
-          </div>
-          <div class="titulo row align-items-center justify-content-center">
-            <h1 class="col-12 text-center title">ValpoSystems</h1>
-            <div class="col-12 text-center">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-linkedin"></i>
-              <i class="bi bi-instagram"></i>
-            </div>
-          </div>
+
+      <div class="containerBanner">
+        <h1>ValpoSystems</h1>
+        <div class="iconos">
+          <a href="" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="bi bi-instagram"></i
+          ></a>
         </div>
       </div>
 
       <!-- Seccion de habilidades y productos de Valpo -->
-      <section>
-        <article>
-          <h2>Consultoria</h2>
-          <p>
-            Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
-            caminos en arquitectura orientadas a servicios.
-          </p>
-        </article>
-        <article>
-          <h2>Capacitacion</h2>
-          <p>
-            ValpoSystems Capacitación es un Centro de Formación Profesional que
-            también ofrece a sus clientes cursos TI a medida
-          </p>
-        </article>
-        <article>
-          <h2>Testing y QA</h2>
-          <p>
-            Asegurar que los servicios implementados por nuestros
-            desarrolladores cumplan con los estándares de calidad
-          </p>
-        </article>
-        <article>
-          <h2>Aseguramiento de Calidad</h2>
-          <p>
-            ValpoSystems se basa principalmente en procedimientos que garantizan
-            un producto eficiente
-          </p>
-        </article>
-        <article>
-          <h2>Desarrollo y Mantención de Software</h2>
-          <p>
-            Trabajamos directamente con el cliente, construyendo aplicaciones de
-            alto nivel
-          </p>
-        </article>
-        <article>
-          <h2>Infraestructura y Soporte</h2>
-          <p>
-            Hoy en día gran parte de los recursos del área informática son
-            destinados a la mantención y al soporte técnico
-          </p>
-        </article>
+      <section class="containerFeatures">
+        <h3>ValpoSystems</h3>
+        <h4>
+          Dar un mayor peso a las Tecnologías de la Información en su empresa
+          hace <br />
+          que cobren enorme importancia las infraestructuras y los servicios
+          informáticos.
+        </h4>
+        <div class="containerItems">
+          <article class="celesteUno">
+            <img src="./images/6NKPrhO.png" alt="consultoria" />
+            <h2>Consultoria</h2>
+            <p>
+              Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
+              caminos en arquitectura orientadas a servicios.
+            </p>
+          </article>
+          <article class="rojoDos">
+            <img src="./images/rojo2.png" alt="Capacitación" />
+            <h2>Capacitación</h2>
+            <p>
+              ValpoSystems Capacitación es un Centro de Formación Profesional
+              que también ofrece a sus clientes cursos TI a medida
+            </p>
+          </article>
+          <article class="azulTres">
+            <img src="./images/azul3.png" alt="Testing y QA" />
+            <h2>Testing y QA</h2>
+            <p>
+              Asegurar que los servicios implementados por nuestros
+              desarrolladores cumplan con los estándares de calidad
+            </p>
+          </article>
+          <article class="naranjaCuatro">
+            <img src="./images/naranja4.png" alt="Aseguramiento de Calidad" />
+            <h2>Aseguramiento de Calidad</h2>
+            <p>
+              ValpoSystems se basa principalmente en procedimientos que
+              garantizan un producto eficiente
+            </p>
+          </article>
+          <article class="violetaCinco">
+            <img
+              src="./images/44.png"
+              alt="Desarrolo y  Mantención de Software"
+            />
+            <h2>Desarrollo y Mantención de Software</h2>
+            <p>
+              Trabajamos directamente con el cliente, construyendo aplicaciones
+              de alto nivel
+            </p>
+          </article>
+          <article class="verdeSeis">
+            <img src="./images/verde.png" alt="Infraestructura y Soporte" />
+            <h2>Infraestructura y Soporte</h2>
+            <p>
+              Hoy en día gran parte de los recursos del área informática son
+              destinados a la mantención y al soporte técnico
+            </p>
+          </article>
+        </div>
       </section>
       <!-- Seccion de servicios -->
       <section>
-        <h2>Servicios Destacados ValpoSystems</h2>
-        <article>
-          <!-- imagen aqui -->
-          <h3>Desarrollos Liferay DXP</h3>
-          <p>
-            Somos parte del exclusivo grupo de partners en Chile y tenemos el
-            conocimiento y experiencia para desarrollar portales en Liferay DXP
-          </p>
-          <a href="">Màs Informacion</a>
-        </article>
-        <article>
-          <!-- Imagen Aqui -->
-          <h3>La Nube en AWS</h3>
-          <p>
-            AWS provee una cartera de productos completa que lo ayudan a
-            solucionar los problemas más comunes y a crear soluciones de forma
-            más rápida mediante la plataforma de AWS
-          </p>
-          <a href="">Màs Informacion</a>
-        </article>
-        <article>
-          <!-- Imagen Aqui -->
-          <h3>Monitoreo Aplicaciones JAVA</h3>
-          <p>
-            Somos especialistas en capturar y analizar automáticamente registros
-            de GC, volcados de subprocesos, volcados de pila y varios artefactos
-            más para identificar la causa raíz del problema.
-          </p>
-          <a href="">Màs Informacion</a>
+        <h2 class="text-center">Servicios Destacados ValpoSystems</h2>
+        <article class="containerServices">
+          <div>
+            <img src="./images/services1.jpg" alt="Desarrollo Liferay DXP" />
+            <h3>Desarrollos Liferay DXP</h3>
+            <p>
+              Somos parte del exclusivo grupo de partners en Chile y tenemos el
+              conocimiento y experiencia para desarrollar portales en Liferay
+              DXP
+            </p>
+            <a href="">Màs Informacion</a>
+          </div>
+          <div>
+            <img src="./images/services2.jpg" alt="La Nube en AWS" />
+            <h3>La Nube en AWS</h3>
+            <p>
+              AWS provee una cartera de productos completa que lo ayudan a
+              solucionar los problemas más comunes y a crear soluciones de forma
+              más rápida mediante la plataforma de AWS
+            </p>
+            <a href="">Màs Informacion</a>
+          </div>
+          <div>
+            <img
+              src="./images/services3.jpg"
+              alt="Monitoreo Aplicaciones JAVA"
+            />
+            <h3>Monitoreo Aplicaciones JAVA</h3>
+            <p>
+              Somos especialistas en capturar y analizar automáticamente
+              registros de GC, volcados de subprocesos, volcados de pila y
+              varios artefactos más para identificar la causa raíz del problema.
+            </p>
+            <a href="">Màs Informacion</a>
+          </div>
         </article>
       </section>
 
       <!-- Seccion de presentacion de Gerencias -->
       <section>
-        <h2>ValpoSistems</h2>
-        <p>
+        <h2 class="text-center">ValpoSistems</h2>
+        <p class="text-center subtitulo">
           Somos un grupo integral de especialistas dedicados a la consultoría en
           Tecnologías de la Información y Comunicación (TIC).
         </p>
-        <article>
-          <!-- imagen de Eduardo Gallardo -->
-          <h3>Eduardo Gallardo</h3>
-          <h3>CEO</h3>
-          <p>
-            Soy un aficionado por la tecnología y las soluciones, Master
-            Information Technology (MIT) y Master in Business Administration
-            (MBA). Con más de 20 años de experiencia en la industria de las
-            Tecnologías de la Información, cuento con una vasta trayectoria cómo
-            especialista/consultor, apoyando con sólidos conocimientos a
-            distintas compañías tanto a nivel nacional, como internacional.
-          </p>
-          <div>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+        <article class="containerNosotros">
+          <div class="sobreNosotros">
+            <img src="/images/h1.jfif" alt="gallardo" />
+            <h3>Eduardo Gallardo</h3>
+            <h3>CEO</h3>
+            <p>
+              Soy un aficionado por la tecnología y las soluciones, Master
+              Information Technology (MIT) y Master in Business Administration
+              (MBA). Con más de 20 años de experiencia en la industria de las
+              Tecnologías de la Información, cuento con una vasta trayectoria
+              cómo especialista/consultor, apoyando con sólidos conocimientos a
+              distintas compañías tanto a nivel nacional, como internacional.
+            </p>
+            <div class="nosotrosRedes">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
           </div>
-        </article>
-        <article>
-          <!-- imagen de Crsitian Toncio -->
-          <h3>Crsitian Toncio</h3>
-          <h3>GERENTE SERVICIOS</h3>
-          <p>
-            Full stack developer con más de 15 años de experiencia en desarrollo
-            de software, integración de sistemas, transacciones de pago bancario
-            y automatización de procesos, guiado por una marcada orientación a
-            la investigación y estudio de nuevas tecnologías. Capacidad para
-            liderar e integrar equipos de trabajo, interesado siempre en
-            mantener buenas relaciones personales.
-          </p>
-          <div>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+          <div class="sobreNosotros">
+            <img src="./images/h2.jfif" alt="Toncio" />
+            <h3>Crsitian Toncio</h3>
+            <h3>GERENTE SERVICIOS</h3>
+            <p>
+              Full stack developer con más de 15 años de experiencia en
+              desarrollo de software, integración de sistemas, transacciones de
+              pago bancario y automatización de procesos, guiado por una marcada
+              orientación a la investigación y estudio de nuevas tecnologías.
+              Capacidad para liderar e integrar equipos de trabajo, interesado
+              siempre en mantener buenas relaciones personales.
+            </p>
+            <div class="nosotrosRedes">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
           </div>
-        </article>
-        <article>
-          <!-- imagen de Cristian Rodríguez -->
-          <h3>Cristian Rodríguez</h3>
-          <h3>GERENTE OPERACIONES</h3>
-          <p>
-            Poseo vasta experiencia en las diferentes fases del ciclo de vida
-            del desarrollo del software, tales como análisis, diseño,
-            desarrollo, pruebas y liberación de proyectos de diversa magnitud,
-            aplicando en cada uno de los procesos un nivel avanzado del uso de
-            UML, buenas prácticas y metodologías dando énfasis en asegurar la
-            calidad.
-          </p>
-          <div>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
+          <div class="sobreNosotros">
+            <img src="./images/h3.jfif" alt="Rodríguez" />
+            <h3>Cristian Rodríguez</h3>
+            <h3>GERENTE OPERACIONES</h3>
+            <p>
+              Poseo vasta experiencia en las diferentes fases del ciclo de vida
+              del desarrollo del software, tales como análisis, diseño,
+              desarrollo, pruebas y liberación de proyectos de diversa magnitud,
+              aplicando en cada uno de los procesos un nivel avanzado del uso de
+              UML, buenas prácticas y metodologías dando énfasis en asegurar la
+              calidad.
+            </p>
+            <div class="nosotrosRedes">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
           </div>
         </article>
       </section>
