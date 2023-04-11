@@ -1,292 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-    <script
-      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
-      defer
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <link rel="stylesheet" href="./style.css" />
-    <title>valposystems</title>
-  </head>
-  <body>
-    <!-- Encabezado y barra de navegacion -->
-    <header class="row align-items-center encabezado me-0">
-      <!--Logo  -->
-      <div class="col-3">
-        <img src="./images/logo-Normal.png" alt="Logo" class="img-logo" />
-      </div>
-      <!-- Barra de navegacion -->
-      <nav class="col-9">
-        <!-- Posicioné los items del nav con margin 0 -->
-        <ul class="row align-items-center m-0">
-          <li class="col">Inicio</li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              Conócenos
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Quiénes Somos</li>
-              <li class="dropdown-item">Política de Calidad</li>
-            </ul>
-          </li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              Servicios TI
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Servicios</li>
-              <li class="dropdown-item">Servicios AWS</li>
-              <li class="dropdown-item">Liferay</li>
-              <li class="dropdown-item">Catálogo de conocimientos</li>
-              <li class="dropdown-item">Servicio en la nube</li>
-              <li class="dropdown-item">Monitoreo de aplicaciones java</li>
-              <li class="dropdown-item">Catálogo de cursos</li>
-            </ul>
-          </li>
-          <li class="col">Clientes</li>
-          <li class="col">Multimedia</li>
-          <li class="col">Noticias</li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              ValpoSystems Capacitación
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Capacitacion</li>
-              <li class="dropdown-item">Nuestros Cursos</li>
-              <li class="dropdown-item">Política de Calidad</li>
-            </ul>
-          </li>
-          <li class="col">Contacto</li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+  <title>valposystems</title>
+</head>
+
+<body>
+  <header>
+    <div class="row"> <!--a partir de acá está toda la barra de navegacion-->
+      <nav class="navbar fixed-top navbar-expand-lg  nav-underline"
+        id="navbarkcontainer">
+        <!--quitando la clase, se puede modificar el color (clase bg-dark, etc)-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-Normal.png" alt="Logo" class="img-logo mx-5" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvastittle">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="offcanvasbody">
+              <ul class="navbar-nav justify-content-end mx-2 flex-grow-1 pe-3">
+                <li class="nav-item mx-5">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li>
+                <li class="nav-item dropdown mx-5">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Conócenos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
+                    <li><a class="dropdown-item" href="#">Polítitca de calidad</a></li>
+                    <li><a class="dropdown-item" href="#">Clientes</a></li>
+                    <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                  </ul>
+                </li>
+                </li>
+
+                <li class="nav-item dropdown mx-5">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios TI
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Servicios</a></li>
+                    <li><a class="dropdown-item" href="#">Servicios AWS</a></li>
+                    <li><a class="dropdown-item" href="#">Liferay</a></li>
+                    <li><a class="dropdown-item" href="#">Catálogo de conocimientos</a></li>
+                    <li><a class="dropdown-item" href="#">Servicio en la nube</a></li>
+                    <li><a class="dropdown-item" href="#">Monitoreo de aplicaciones java</a></li>
+                    <li><a class="dropdown-item" href="#">Catálogo de cursos</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#">Noticias</a>
+                </li>
+
+                <li class="nav-item dropdown mx-5">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Capacitate con nosotros
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Capacitacion</a></li>
+                    <li><a class="dropdown-item" href="#">Nuestros cursos</a></li>
+                    <li><a class="dropdown-item" href="#">Politica de calidad</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
-    </header>
+    </div> <!--final de la barra de navegación-->
+  </header>
 
-    <!-- Contenido principal -->
-    <main>
-      <!-- Portada con redes -->
+  <!-- Contenido principal -->
+  <main>
+    <!-- Portada con redes -->
 
-      <div class="containerBanner">
-        <h1>ValpoSystems</h1>
-        <div class="iconos">
-          <a href="" target="_blank" rel="noopener noreferrer"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
-            ><i class="bi bi-twitter"></i
-          ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
-            ><i class="bi bi-instagram"></i
-          ></a>
-        </div>
+    <div class="containerBanner">
+      <h1>ValpoSystems</h1>
+      <div class="iconos">
+        <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
       </div>
+    </div>
 
-      <!-- Seccion de habilidades y productos de Valpo -->
-      <section class="containerFeatures">
-        <h3>ValpoSystems</h3>
-        <h4>
-          Dar un mayor peso a las Tecnologías de la Información en su empresa
-          hace <br />
-          que cobren enorme importancia las infraestructuras y los servicios
-          informáticos.
-        </h4>
-        <div class="containerItems">
-          <article class="celesteUno">
-            <img src="./images/6NKPrhO.png" alt="consultoria" />
-            <h2>Consultoria</h2>
-            <p>
-              Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
-              caminos en arquitectura orientadas a servicios.
-            </p>
-          </article>
-          <article class="rojoDos">
-            <img src="./images/rojo2.png" alt="Capacitación" />
-            <h2>Capacitación</h2>
-            <p>
-              ValpoSystems Capacitación es un Centro de Formación Profesional
-              que también ofrece a sus clientes cursos TI a medida
-            </p>
-          </article>
-          <article class="azulTres">
-            <img src="./images/azul3.png" alt="Testing y QA" />
-            <h2>Testing y QA</h2>
-            <p>
-              Asegurar que los servicios implementados por nuestros
-              desarrolladores cumplan con los estándares de calidad
-            </p>
-          </article>
-          <article class="naranjaCuatro">
-            <img src="./images/naranja4.png" alt="Aseguramiento de Calidad" />
-            <h2>Aseguramiento de Calidad</h2>
-            <p>
-              ValpoSystems se basa principalmente en procedimientos que
-              garantizan un producto eficiente
-            </p>
-          </article>
-          <article class="violetaCinco">
-            <img
-              src="./images/44.png"
-              alt="Desarrolo y  Mantención de Software"
-            />
-            <h2>Desarrollo y Mantención de Software</h2>
-            <p>
-              Trabajamos directamente con el cliente, construyendo aplicaciones
-              de alto nivel
-            </p>
-          </article>
-          <article class="verdeSeis">
-            <img src="./images/verde.png" alt="Infraestructura y Soporte" />
-            <h2>Infraestructura y Soporte</h2>
-            <p>
-              Hoy en día gran parte de los recursos del área informática son
-              destinados a la mantención y al soporte técnico
-            </p>
-          </article>
+    <!-- Seccion de habilidades y productos de Valpo -->
+    <section class="containerFeatures">
+      <h3>ValpoSystems</h3>
+      <h4>
+        Dar un mayor peso a las Tecnologías de la Información en su empresa
+        hace <br />
+        que cobren enorme importancia las infraestructuras y los servicios
+        informáticos.
+      </h4>
+      <div class="containerItems">
+        <article class="celesteUno">
+          <img src="./images/6NKPrhO.png" alt="consultoria" />
+          <h2>Consultoria</h2>
+          <p>
+            Ofrecemos consultoría a todo tipo de empresas que necesiten abrir
+            caminos en arquitectura orientadas a servicios.
+          </p>
+        </article>
+        <article class="rojoDos">
+          <img src="./images/rojo2.png" alt="Capacitación" />
+          <h2>Capacitación</h2>
+          <p>
+            ValpoSystems Capacitación es un Centro de Formación Profesional
+            que también ofrece a sus clientes cursos TI a medida
+          </p>
+        </article>
+        <article class="azulTres">
+          <img src="./images/azul3.png" alt="Testing y QA" />
+          <h2>Testing y QA</h2>
+          <p>
+            Asegurar que los servicios implementados por nuestros
+            desarrolladores cumplan con los estándares de calidad
+          </p>
+        </article>
+        <article class="naranjaCuatro">
+          <img src="./images/naranja4.png" alt="Aseguramiento de Calidad" />
+          <h2>Aseguramiento de Calidad</h2>
+          <p>
+            ValpoSystems se basa principalmente en procedimientos que
+            garantizan un producto eficiente
+          </p>
+        </article>
+        <article class="violetaCinco">
+          <img src="./images/44.png" alt="Desarrolo y  Mantención de Software" />
+          <h2>Desarrollo y Mantención de Software</h2>
+          <p>
+            Trabajamos directamente con el cliente, construyendo aplicaciones
+            de alto nivel
+          </p>
+        </article>
+        <article class="verdeSeis">
+          <img src="./images/verde.png" alt="Infraestructura y Soporte" />
+          <h2>Infraestructura y Soporte</h2>
+          <p>
+            Hoy en día gran parte de los recursos del área informática son
+            destinados a la mantención y al soporte técnico
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Seccion de servicios -->
+    <section>
+      <h2 class="text-center">Servicios Destacados ValpoSystems</h2>
+      <article class="containerServices">
+        <div>
+          <img src="./images/services1.jpg" alt="Desarrollo Liferay DXP" />
+          <h3>Desarrollos Liferay DXP</h3>
+          <p>
+            Somos parte del exclusivo grupo de partners en Chile y tenemos el
+            conocimiento y experiencia para desarrollar portales en Liferay
+            DXP
+          </p>
+          <a href="">Màs Informacion</a>
         </div>
-      </section>
-      <!-- Seccion de servicios -->
-      <section>
-        <h2 class="text-center">Servicios Destacados ValpoSystems</h2>
-        <article class="containerServices">
-          <div>
-            <img src="./images/services1.jpg" alt="Desarrollo Liferay DXP" />
-            <h3>Desarrollos Liferay DXP</h3>
-            <p>
-              Somos parte del exclusivo grupo de partners en Chile y tenemos el
-              conocimiento y experiencia para desarrollar portales en Liferay
-              DXP
-            </p>
-            <a href="">Màs Informacion</a>
-          </div>
-          <div>
-            <img src="./images/services2.jpg" alt="La Nube en AWS" />
-            <h3>La Nube en AWS</h3>
-            <p>
-              AWS provee una cartera de productos completa que lo ayudan a
-              solucionar los problemas más comunes y a crear soluciones de forma
-              más rápida mediante la plataforma de AWS
-            </p>
-            <a href="">Màs Informacion</a>
-          </div>
-          <div>
-            <img
-              src="./images/services3.jpg"
-              alt="Monitoreo Aplicaciones JAVA"
-            />
-            <h3>Monitoreo Aplicaciones JAVA</h3>
-            <p>
-              Somos especialistas en capturar y analizar automáticamente
-              registros de GC, volcados de subprocesos, volcados de pila y
-              varios artefactos más para identificar la causa raíz del problema.
-            </p>
-            <a href="">Màs Informacion</a>
-          </div>
-        </article>
-      </section>
+        <div>
+          <img src="./images/services2.jpg" alt="La Nube en AWS" />
+          <h3>La Nube en AWS</h3>
+          <p>
+            AWS provee una cartera de productos completa que lo ayudan a
+            solucionar los problemas más comunes y a crear soluciones de forma
+            más rápida mediante la plataforma de AWS
+          </p>
+          <a href="">Màs Informacion</a>
+        </div>
+        <div>
+          <img src="./images/services3.jpg" alt="Monitoreo Aplicaciones JAVA" />
+          <h3>Monitoreo Aplicaciones JAVA</h3>
+          <p>
+            Somos especialistas en capturar y analizar automáticamente
+            registros de GC, volcados de subprocesos, volcados de pila y
+            varios artefactos más para identificar la causa raíz del problema.
+          </p>
+          <a href="">Màs Informacion</a>
+        </div>
+      </article>
+    </section>
 
-      <!-- Seccion de presentacion de Gerencias -->
-      <section>
-        <h2 class="text-center">ValpoSistems</h2>
-        <p class="text-center subtitulo">
-          Somos un grupo integral de especialistas dedicados a la consultoría en
-          Tecnologías de la Información y Comunicación (TIC).
-        </p>
-        <article class="containerNosotros">
-          <div class="sobreNosotros">
-            <img src="/images/h1.jfif" alt="gallardo" />
-            <h3>Eduardo Gallardo</h3>
-            <h3>CEO</h3>
-            <p>
-              Soy un aficionado por la tecnología y las soluciones, Master
-              Information Technology (MIT) y Master in Business Administration
-              (MBA). Con más de 20 años de experiencia en la industria de las
-              Tecnologías de la Información, cuento con una vasta trayectoria
-              cómo especialista/consultor, apoyando con sólidos conocimientos a
-              distintas compañías tanto a nivel nacional, como internacional.
-            </p>
-            <div class="nosotrosRedes">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-instagram"></i>
-            </div>
+    <!-- Seccion de presentacion de Gerencias -->
+    <section>
+      <h2 class="text-center">ValpoSistems</h2>
+      <p class="text-center subtitulo">
+        Somos un grupo integral de especialistas dedicados a la consultoría en
+        Tecnologías de la Información y Comunicación (TIC).
+      </p>
+      <article class="containerNosotros">
+        <div class="sobreNosotros">
+          <img src="/images/h1.jfif" alt="gallardo" />
+          <h3>Eduardo Gallardo</h3>
+          <h3>CEO</h3>
+          <p>
+            Soy un aficionado por la tecnología y las soluciones, Master
+            Information Technology (MIT) y Master in Business Administration
+            (MBA). Con más de 20 años de experiencia en la industria de las
+            Tecnologías de la Información, cuento con una vasta trayectoria
+            cómo especialista/consultor, apoyando con sólidos conocimientos a
+            distintas compañías tanto a nivel nacional, como internacional.
+          </p>
+          <div class="nosotrosRedes">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
           </div>
-          <div class="sobreNosotros">
-            <img src="./images/h2.jfif" alt="Toncio" />
-            <h3>Crsitian Toncio</h3>
-            <h3>GERENTE SERVICIOS</h3>
-            <p>
-              Full stack developer con más de 15 años de experiencia en
-              desarrollo de software, integración de sistemas, transacciones de
-              pago bancario y automatización de procesos, guiado por una marcada
-              orientación a la investigación y estudio de nuevas tecnologías.
-              Capacidad para liderar e integrar equipos de trabajo, interesado
-              siempre en mantener buenas relaciones personales.
-            </p>
-            <div class="nosotrosRedes">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-instagram"></i>
-            </div>
+        </div>
+        <div class="sobreNosotros">
+          <img src="./images/h2.jfif" alt="Toncio" />
+          <h3>Crsitian Toncio</h3>
+          <h3>GERENTE SERVICIOS</h3>
+          <p>
+            Full stack developer con más de 15 años de experiencia en
+            desarrollo de software, integración de sistemas, transacciones de
+            pago bancario y automatización de procesos, guiado por una marcada
+            orientación a la investigación y estudio de nuevas tecnologías.
+            Capacidad para liderar e integrar equipos de trabajo, interesado
+            siempre en mantener buenas relaciones personales.
+          </p>
+          <div class="nosotrosRedes">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
           </div>
-          <div class="sobreNosotros">
-            <img src="./images/h3.jfif" alt="Rodríguez" />
-            <h3>Cristian Rodríguez</h3>
-            <h3>GERENTE OPERACIONES</h3>
-            <p>
-              Poseo vasta experiencia en las diferentes fases del ciclo de vida
-              del desarrollo del software, tales como análisis, diseño,
-              desarrollo, pruebas y liberación de proyectos de diversa magnitud,
-              aplicando en cada uno de los procesos un nivel avanzado del uso de
-              UML, buenas prácticas y metodologías dando énfasis en asegurar la
-              calidad.
-            </p>
-            <div class="nosotrosRedes">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-instagram"></i>
-            </div>
+        </div>
+        <div class="sobreNosotros">
+          <img src="./images/h3.jfif" alt="Rodríguez" />
+          <h3>Cristian Rodríguez</h3>
+          <h3>GERENTE OPERACIONES</h3>
+          <p>
+            Poseo vasta experiencia en las diferentes fases del ciclo de vida
+            del desarrollo del software, tales como análisis, diseño,
+            desarrollo, pruebas y liberación de proyectos de diversa magnitud,
+            aplicando en cada uno de los procesos un nivel avanzado del uso de
+            UML, buenas prácticas y metodologías dando énfasis en asegurar la
+            calidad.
+          </p>
+          <div class="nosotrosRedes">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
+    </section>
 
-      <!-- Seccion de testimonios -->
-      <section>
+    <!-- Seccion de testimonios -->
+    <section>
+      <div class="col" id="Certificacion-Becas">
         <h2>Programa de Certificacion y Becas</h2>
         <p>
           En ValpoSystems apostamos por el crecimiento constante de nuestro
@@ -318,10 +309,12 @@
             Universidad Adolfo Ibáñez.
           </p>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <!-- Seccion de certiprof -->
-      <section>
+    <!-- Seccion de certiprof -->
+    <section>
+      <div class="col" id="CertificacionInternacional">
         <!-- Imagen de fondo -->
         <h2>¿Te gustaría obtener una certificación internacional?</h2>
         <p>
@@ -329,76 +322,98 @@
           Toma la decisión, inscríbete y cumple tus metas. Más Información
           <a href="">Click Aquí</a>
         </p>
-      </section>
-      <!-- Seccion de Partners -->
-      <section>
+      </div>
+    </section>
+    <!-- Seccion de Partners -->
+    <section>
+      <div class="container-¿" id="nuestrosPartners">
         <h2>Nuestros Partners</h2>
         <!-- Imagenes de los partners -->
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid" id="footer1">
       <!-- contactos -->
-      <div>
-        <i class="bi bi-geo-alt"></i>
-        <h2>Buscanos</h2>
-        <p>Huérfanos 863, Oficina 612 | Santiago Chile.</p>
-        <p>Carrera 13 # 90-17 | Bogotá Colombia.</p>
+      <div class="container d-flex" id="contactofooter1">
+        <div class="col">
+          <i class="bi bi-geo-alt"></i>
+          <h2>Buscanos</h2>
+          <p>Huérfanos 863, Oficina 612 | Santiago Chile.</p>
+          <p>Carrera 13 # 90-17 | Bogotá Colombia.</p>
+        </div>
+        <div class="col">
+          <i class="bi bi-telephone-fill"></i>
+          <h2>Llámanos</h2>
+          <p>+569 34567033 Chile</p>
+          <p>(601) 7703279 Colombia</p>
+        </div>
+        <div class="col">
+          <i class="bi bi-envelope"></i>
+          <h2>Escribenos</h2>
+          <p>contacto@valposystems.com</p>
+        </div>
       </div>
-      <div>
-        <i class="bi bi-telephone-fill"></i>
-        <h2>Llámanos</h2>
-        <p>+569 34567033 Chile</p>
-        <p>(601) 7703279 Colombia</p>
-      </div>
-      <div>
-        <i class="bi bi-envelope"></i>
-        <h2>Escribenos</h2>
-        <p>contacto@valposystems.com</p>
-      </div>
+    </div>
 
-      <!-- redes y links de interes -->
-      <div>
-        <!-- logo -->
-        <p>
-          Dar un mayor peso a las Tecnologías de la Información en su empresa
-          hace que cobren enorme importancia las infraestructuras y los
-          servicios informáticos.
-        </p>
-        <h2>Siguenos</h2>
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-instagram"></i>
+    <div class="container-fluid" id="footer2"> <!-- redes y links de interes -->
+
+      <div class="container d-flex" id="contactofooter2">
+        <div class="row">
+          <div class="col">
+            <img src="./images/logo-Normal.png" alt="Logo" class="img-logo mx-5" />
+            <p>
+              Dar un mayor peso a las Tecnologías de la Información
+              en su empresa
+              hace que cobren enorme importancia las infraestructuras y los
+              servicios informáticos.
+            </p>
+            <h2>Siguenos</h2>
+            <i class="bi bi-facebook mx-1"></i>
+            <i class="bi bi-twitter mx-1"></i>
+            <i class="bi bi-linkedin mx-1"></i>
+            <i class="bi bi-instagram mx-1"></i>
+          </div>
+          <div class="col">
+            <h2>Links de interes</h2>
+            <ul>
+              <li><a href=""></a>Quiénes Somos</li>
+              <li><a href=""></a>Clientes</li>
+              <li><a href=""></a>Noticias</li>
+              <li><a href=""></a>Política De Calidad</li>
+              <li><a href=""></a>Servicios</li>
+              <li><a href=""></a>Multimedia</li>
+              <li><a href=""></a>Capacitación</li>
+              <li><a href=""></a>Cursos</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Nuestra empresa</h2>
+            <ul>
+              <li><a href=""></a>4 Little Friends</li>
+              <li><a href=""></a>Espacios E2C</li>
+              <li><a href=""></a>Valpo Print</li>
+              <li><a href=""></a>Valpo Capacitacion</li>
+            </ul>
+          </div>
+        </div>
+       
+
       </div>
-      <div>
-        <h2>Links de interes</h2>
-        <ul>
-          <li><a href=""></a>Quiénes Somos</li>
-          <li><a href=""></a>Clientes</li>
-          <li><a href=""></a>Noticias</li>
-          <li><a href=""></a>Política De Calidad</li>
-          <li><a href=""></a>Servicios</li>
-          <li><a href=""></a>Multimedia</li>
-          <li><a href=""></a>Capacitación</li>
-          <li><a href=""></a>Cursos</li>
-        </ul>
+    </div>
+    <div class="container-fluid" id="footer3">
+      <div class="container d-flex">
+        <div class="col" id="footer3-A">
+          <p>Copyright © 2023, All Right Reserved <a href="">ValpoSystems</a></p>
+        </div>
+        <div class="col d-flex" id="footer3-B">
+          <a href="#">Inicio</a>
+          <a href="#">Contacto</a>
+        </div>
       </div>
-      <div>
-        <h2>Nuestra empresa</h2>
-        <ul>
-          <li><a href=""></a>4 Little Friends</li>
-          <li><a href=""></a>Espacios E2C</li>
-          <li><a href=""></a>Valpo Print</li>
-          <li><a href=""></a>Valpo Capacitacion</li>
-        </ul>
-      </div>
-      <!-- Derechos -->
-      <p>Copyright © 2023, All Right Reserved <a href="">ValpoSystems</a></p>
-      <div>
-        <a href="">Inicio</a>
-        <a href="">Contacto</a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

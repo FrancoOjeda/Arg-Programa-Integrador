@@ -204,7 +204,7 @@ text-align: center;
 .nosotrosRedes i:hover{
     color: black;
 }
-=======
+/* ============= */
 .slide-1{
     background-image: url(./images/slide-1.jpg);
     background-size: cover;
@@ -243,3 +243,96 @@ text-align: center;
     line-height: 1.2;
 }
 
+#Certificacion-Becas{
+    height: 800px;
+    width: 100%;
+    background-color: #b2b3bb;
+    justify-content: center;
+}
+
+#CertificacionInternacional {
+    height: 230px;
+    width: 100%;
+    background-color: #cfaeae;
+    color: white;
+    justify-content: center;
+    background-image: url(/Arg-Programa-Integrador/images/div-gral-capacitacion-tres\ \(2\).jpg);
+}
+
+#nuestrosPartners {
+    height: 450px;
+    width: 100%;
+    background-color: #b2b3bb;
+    justify-content: center;
+}
+
+#footer1{
+    height: 300px;
+    width: 100%;
+    background-color: #393b4a;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+    #contactofooter1{
+        margin-top: 2%;
+        text-align: center;
+    }
+
+#footer2{
+    height: 300px;
+    width: 100%;
+    background-color: #393b4a;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+}   
+    #contactofooter2{
+        
+    }
+
+.bi {
+    font-size: 30px;    
+}
+
+.bi-telephone-fill, .bi-envelope, .bi-geo-alt{
+    color: hsl(69, 84%, 46%);
+}
+
+#footer3{
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    
+}
+
+    #footer3-A {
+        justify-content: center;
+    
+        padding-top: 2%;
+    }
+
+    #footer3-B {
+        justify-content: right;
+        padding-top: 2%;
+    }
+#navbarkcontainer{
+    background-color: #393b4a;
+}
+
+#navbarkcontainer a{
+    color: white;
+}
+
+a{
+    color:chocolate;
+    
+}
