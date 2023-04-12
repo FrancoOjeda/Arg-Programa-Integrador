@@ -17,8 +17,7 @@
 <body>
   <header>
     <div class="row"> <!--a partir de acá está toda la barra de navegacion-->
-      <nav class="navbar fixed-top navbar-expand-lg  nav-underline"
-        id="navbarkcontainer">
+      <nav class="navbar navbar-dark fixed-top navbar-expand-lg  nav-underline" id="navbarkcontainer"> 
         <!--quitando la clase, se puede modificar el color (clase bg-dark, etc)-->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -26,7 +25,7 @@
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a href="#" class="navbar-toggler-icon" ></a>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
@@ -176,7 +175,7 @@
     <!-- Seccion de servicios -->
     <section>
       <h2 class="text-center">Servicios Destacados ValpoSystems</h2>
-      <article class="containerServices">
+      <article class="containerServices d-md-flex d-sm-grid">
         <div>
           <img src="./images/services1.jpg" alt="Desarrollo Liferay DXP" />
           <h3>Desarrollos Liferay DXP</h3>
@@ -277,51 +276,69 @@
 
     <!-- Seccion de testimonios -->
     <section>
-      <div class="col" id="Certificacion-Becas">
-        <h2>Programa de Certificacion y Becas</h2>
-        <p>
-          En ValpoSystems apostamos por el crecimiento constante de nuestro
-          equipo. Centramos los esfuerzos en el desarrollo de cada uno de ellos,
-          con diversos planes de capacitación y un potente programa de
-          certificaciones.
-        </p>
-        <article>
-          <!-- Aqui video -->
-          <p>
-            <b>Eduardo Gallardo Ortiz,</b> CEO de ValpoSystems nos cuenta porque
-            apostamos por el crecimiento constante de nuestros profesionales y
-            de donde nace la idea del programa de Certificaciones y Becas.
-          </p>
-        </article>
-        <article>
-          <!-- Aqui video -->
-          <p>
-            Testimonio de <b> Juan Andrés Gallardo Ortiz,</b> quien realizó un
-            Diplomado en Dirección Comercial y Ventas en la facultad de negocios
-            de la Universidad de Chile.
-          </p>
-        </article>
-        <article>
-          <!-- Aqui video -->
-          <p>
-            Testimonio de <b> Dynko Hernández</b> BDR & SENIOR CONSULTANT quien
-            realizó un Diplomado de dirección estratégica de ventas en la
-            Universidad Adolfo Ibáñez.
-          </p>
-        </article>
+      <div class="container-fluid" id="Certificacion-Becas">
+        <div class="container d-sm-grid">
+          <h2>Programa de Certificacion y Becas</h2>
+          <div id="certificacion-parrafo">
+            <p>
+              En ValpoSystems apostamos por el crecimiento constante de nuestro
+              equipo. Centramos los esfuerzos en el desarrollo de cada uno de ellos,
+              con diversos planes de capacitación y un potente programa de
+              certificaciones.
+            </p>
+          </div>
+          <div class="container d-flex">
+            <div class="col mx-2">
+              <article>
+                <iframe width="390" height="250" src="https://www.youtube.com/embed/GPPRLMh1BMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>
+                  <b>Eduardo Gallardo Ortiz,</b> CEO de ValpoSystems nos cuenta porque
+                  apostamos por el crecimiento constante de nuestros profesionales y
+                  de donde nace la idea del programa de Certificaciones y Becas.
+                </p>
+              </article>
+            </div>
+            <div class="col mx-2">
+              <article>
+                
+                <iframe width="390" height="250" src="https://www.youtube.com/embed/GPPRLMh1BMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>
+                  <b>Eduardo Gallardo Ortiz,</b> CEO de ValpoSystems nos cuenta porque
+                  apostamos por el crecimiento constante de nuestros profesionales y
+                  de donde nace la idea del programa de Certificaciones y Becas.
+                </p>
+              </article>
+            </div>
+            <div class="col mx-2">
+              
+              <iframe width="390" height="250" src="https://www.youtube.com/embed/GPPRLMh1BMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <article>
+                 
+                <p>
+                  <b>Eduardo Gallardo Ortiz,</b> CEO de ValpoSystems nos cuenta porque
+                  apostamos por el crecimiento constante de nuestros profesionales y
+                  de donde nace la idea del programa de Certificaciones y Becas.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Seccion de certiprof -->
     <section>
-      <div class="col" id="CertificacionInternacional">
-        <!-- Imagen de fondo -->
+      <div class="container-fluid d-md-flex d-sm-none" id="CertificacionInternacional">
+        <div class="col">
+                  <!-- Imagen de fondo -->
         <h2>¿Te gustaría obtener una certificación internacional?</h2>
         <p>
           A través de nuestro partner @CertiProf te ofrecemos estos dos Cursos.
           Toma la decisión, inscríbete y cumple tus metas. Más Información
           <a href="">Click Aquí</a>
         </p>
+        </div>
       </div>
     </section>
     <!-- Seccion de Partners -->
