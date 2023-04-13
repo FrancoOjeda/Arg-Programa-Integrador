@@ -1,0 +1,4 @@
+13/4/23
+*añadido responsive a la sección de Servicios Destacados y estilo a las imagenes
+*Añadido responsive a la sección Programa de certificacion y Becas 
+*Añadido imagenes correspondientes a la seccion Partnes con responsive
