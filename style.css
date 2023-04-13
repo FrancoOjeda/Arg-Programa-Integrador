@@ -140,26 +140,32 @@ background: linear-gradient(90deg, rgba(135,67,250,1) 0%, rgba(96,84,253,1) 100%
   color: white;
 }
 
-.containerServices{
+#containerServices{
     background-color: #393b4a;
     padding: 2rem 1rem;
-}
-
-.containerServices{
+    color: white;
     width: 100%;
-    display: flex;
     justify-content: center;  
     color: white;
     gap: 2rem;
+    justify-content: center;
 }
 
-.containerServices div{
-    width: 26rem;
-}
+    #containerServices img{
+        width: 100%;
+        border-radius: 35px;
+    }
 
-.containerServices p{
-    width: 80%;
+#containerServices2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+
 }
+    #containerServices2 .col{
+        padding: 0% 2%;
+    }
+
 
 .subtitulo {
     width:35%;
@@ -244,40 +250,54 @@ text-align: center;
 }
 
 #Certificacion-Becas{
-    height: 600px;
-    width: 100%;
+    height: auto;
+    width: 90vw;
+    margin: auto;
     background-color: #ffffff;
     justify-content: center;
     text-align: center;
+    padding-bottom: 2%;
 }
     #certificacion-parrafo{
         font-size: 22px;
         font-style: italic;
+        padding-bottom: 2%;
+    }
+    #Certificacion-Becas iframe{
+        width: 95%;
     }
 
-
-#CertificacionInternacional {
-    height: 230px;
+#CertificacionInternacional { 
+    height: auto;
     width: 100%;
     background-color: #393b4a;
     color: white;
     justify-content: center;
     background-image: url(/Arg-Programa-Integrador/images/div-gral-capacitacion-tres\ \(2\).jpg);   
-    padding-top: 3.5%;
-    padding-left: 2%;
     background-position: right;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
+    background-size: 100vw 15vw;
+    text-shadow: #393b4a;
 }
+    #CertificacionInternacional  h2{
+        padding-top: 3vw;
+    }
+
+    #CertificacionInternacional  p{
+        padding-bottom: 3vw;
+    }
 
 #nuestrosPartners {
-    height: 450px;
+    height: auto;
     width: 100%;
     background-color: #ffffff;
     justify-content: center;
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
+    padding: 4% 0%;
+}   
+    #nuestrosPartners h2{
+
+    }
 
 #footer1{
     height: 300px;
@@ -298,7 +318,7 @@ text-align: center;
     }
 
 #footer2{
-    height: 300px;
+    height: auto;
     width: 100%;
     background-color: #393b4a;
     display: flex;
@@ -308,7 +328,7 @@ text-align: center;
     color: white;
 }   
     #contactofooter2{
-        
+        /* asdas*/
     }
 
 .bi {
@@ -347,13 +367,7 @@ text-align: center;
 
 a{
     color:chocolate;
-    
 }
 
-#asddd{
-    color: white;
-    background-color: white;
-}
-#navbarkcontainer{
-    color: white;
-}
+
+
