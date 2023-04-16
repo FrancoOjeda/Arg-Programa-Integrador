@@ -102,31 +102,86 @@
       </div>
       <!-- Formulario de contacto -->
       <div class="row">
-        <div class="col-6">
-          <form action="" class="row">
-            <h2 class="text-center">Formulario de contacto</h2>
-            <p>Deja tus datos y te contactaremos a la brevedad</p>
-            <label for="nombre" class="col-">Nombre</label>
-            <input type="text" id="nombre" />
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" />
-            <label for="email">Email</label>
-            <input type="text" id="email" />
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje"></textarea>
+        <div class="col-md-6 col-12">
+          <form action="" class="row" id="contactoForm">
+            <h1 class="text-center">Formulario de contacto</h1>
+            <p class="text-center">
+              Deja tus datos y te contactaremos a la brevedad
+            </p>
+            <div class="">
+              <div class="mb-6 md-6 row mb-4 offset-3">
+                <label for="nombre" class="col-12 col-md-12 ms-5">
+                  Nombre
+                </label>
+                <input
+                  class="shadow-sm p-2 rounded col-10 col-md-6 ms-5"
+                  type="text"
+                  id="nombre"
+                />
+                <p id="mensaje-error-nombre" class="d-none ms-5 mensaje-error">
+                  Campo obligatorio
+                </p>
+              </div>
+              <div class="mb-3 row mb-4 offset-3">
+                <label class="col-12 col-md-12 ms-5" for="apellido">
+                  Apellido
+                </label>
+                <input
+                  class="shadow-sm p-2 rounded col-10 col-md-6 ms-5"
+                  type="text"
+                  id="apellido"
+                />
+                <p
+                  id="mensaje-error-apellido"
+                  class="d-none ms-5 mensaje-error"
+                >
+                  Campo obligatorio
+                </p>
+              </div>
+              <div class="mb-3 row mb-4 offset-3">
+                <label class="col-12 col-md-12 ms-5" for="email">Email</label>
+                <input
+                  class="shadow-sm p-2 rounded col-10 col-md-6 ms-5"
+                  type="text"
+                  id="email"
+                />
+                <p id="mensaje-error-email" class="d-none ms-5 mensaje-error">
+                  Campo obligatorio
+                </p>
+              </div>
+              <div class="mb-3 row offset-3">
+                <label class="col-10 ms-5" for="mensaje">Mensaje</label>
+                <textarea
+                  class="shadow-sm p-3 rounded col-10 col-md-6 ms-5"
+                  id="mensaje"
+                ></textarea>
+                <p id="mensaje-error-mensaje" class="d-none ms-5 mensaje-error">
+                  Campo obligatorio
+                </p>
+              </div>
+            </div>
+            <button class="col-1 col-md-2 mx-auto p-3">Enviar</button>
           </form>
         </div>
         <!-- informacion de contacto -->
-        <div class="col-6">
-          <h1>Informacion</h1>
-          <!-- Ubicacion -->
-          <div>
-            <i class="bi bi-geo-alt"></i>
-            <div>
-              <p>Huerfanos 863, Edificio España</p>
-              <p>Oficina 612 | Santiago.</p>
-              <p>Carrera 13 # 90-17</p>
-              <p>Bogota Colombia</p>
+        <div class="col-12 col-md-6">
+          <div class="col-12 col-md-12">
+            <h1 class="text-center">Informacion</h1>
+            <!-- Ubicacion -->
+            <div class="row">
+              <div
+                class="col-6 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <i class="bi bi-geo-alt ubicacion"></i>
+              </div>
+              <div
+                class="col-6 col-md-6 align-items-center justify-content-center"
+              >
+                <p>Huerfanos 863, Edificio España</p>
+                <p>Oficina 612 | Santiago.</p>
+                <p>Carrera 13 # 90-17</p>
+                <p>Bogota Colombia</p>
+              </div>
             </div>
           </div>
           <!-- Contacto -->

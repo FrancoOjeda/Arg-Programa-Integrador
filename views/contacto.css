@@ -1,0 +1,58 @@
+
+.containerBannerContacto{
+    background-image: url("../images/div-gral-contacto.jpg");
+    height: 127px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+    margin-top: 100px;
+}
+
+.tituloContacto{
+    margin-left: 4em;
+    font-size: 1.7em;
+}
+
+.list{
+    background-color: rgb(57, 58, 74);
+}
+
+.ubicacion{
+    font-size: 3em;
+    color: aquamarine
+}
+
+.mensaje-error{
+    color: red;
+}
+.campo-invalido{
+    border: 1px red solid;
+}
+
+#contenedorFormulario{
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+}
+input::placeholder {
+    font:italic;
+    
+}
+
+.ubicacion{
+    color: hsl(69, 84%, 46%);
+    font-size: 30px; 
+}
+
+#informacionContacto{
+    border-style:dashed;
+    border-bottom: none;
+    border-top: none;
+    height: 37vw;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
