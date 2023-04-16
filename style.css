@@ -295,9 +295,9 @@ text-align: center;
     text-align: center;
     padding: 4% 0%;
 }   
-    #nuestrosPartners h2{
+    /* #nuestrosPartners h2{
 
-    }
+    } */
 
 #footer1{
     height: 300px;
@@ -327,9 +327,9 @@ text-align: center;
     text-align: center;
     color: white;
 }   
-    #contactofooter2{
+    /* #contactofooter2{
         /* asdas*/
-    }
+    /* } */ 
 
 .bi {
     font-size: 30px;    
@@ -370,4 +370,6 @@ a{
 }
 
 
-
+.list{
+    background-color: rgb(57, 58, 74);
+}

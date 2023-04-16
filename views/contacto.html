@@ -29,104 +29,220 @@
     <title>valposystems</title>
   </head>
   <body>
-    <!-- Encabezado y barra de navegacion -->
-    <header class="row align-items-center encabezado me-0">
-      <!--Logo  -->
-      <div class="col-3">
-        <img src="../images/logo-Normal.png" alt="Logo" class="img-logo" />
+    <header>
+      <div class="row">
+        <!--a partir de acá está toda la barra de navegacion-->
+        <nav
+          class="navbar navbar-dark fixed-top navbar-expand-lg nav-underline"
+          id="navbarkcontainer"
+        >
+          <!--quitando la clase, se puede modificar el color (clase bg-dark, etc)-->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="../images/logo-Normal.png"
+                alt="Logo"
+                class="img-logo mx-5"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <a href="#" class="navbar-toggler-icon"></a>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header" id="offcanvastittle">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body" id="offcanvasbody">
+                <ul
+                  class="navbar-nav justify-content-end mx-2 flex-grow-1 pe-3"
+                >
+                  <li class="nav-item mx-5">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Inicio</a
+                    >
+                  </li>
+
+                  <li class="nav-item dropdown mx-5">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Conócenos
+                    </a>
+                    <ul class="dropdown-menu list">
+                      <li>
+                        <a class="dropdown-item" href="#">Quiénes somos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Polítitca de calidad</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Clientes</a></li>
+                      <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mx-5">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Servicios TI
+                    </a>
+                    <ul class="dropdown-menu list">
+                      <li><a class="dropdown-item" href="#">Servicios</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Servicios AWS</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Liferay</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Catálogo de conocimientos</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Servicio en la nube</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Monitoreo de aplicaciones java</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Catálogo de cursos</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="#">Noticias</a>
+                  </li>
+
+                  <li class="nav-item dropdown mx-5">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Capacitate con nosotros
+                    </a>
+                    <ul class="dropdown-menu list">
+                      <li>
+                        <a class="dropdown-item" href="#">Capacitacion</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Nuestros cursos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Politica de calidad</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item mx-5">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contacto
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-      <!-- Barra de navegacion -->
-      <nav class="col-9">
-        <!-- Posicioné los items del nav con margin 0 -->
-        <ul class="row align-items-center m-0">
-          <li class="col">Inicio</li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              Conócenos
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Quiénes Somos</li>
-              <li class="dropdown-item">Política de Calidad</li>
-            </ul>
-          </li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              Servicios TI
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Servicios</li>
-              <li class="dropdown-item">Servicios AWS</li>
-              <li class="dropdown-item">Liferay</li>
-              <li class="dropdown-item">Catálogo de conocimientos</li>
-              <li class="dropdown-item">Servicio en la nube</li>
-              <li class="dropdown-item">Monitoreo de aplicaciones java</li>
-              <li class="dropdown-item">Catálogo de cursos</li>
-            </ul>
-          </li>
-          <li class="col">Clientes</li>
-          <li class="col">Multimedia</li>
-          <li class="col">Noticias</li>
-          <li class="dropdown col">
-            <button
-              type="button"
-              data-bs-toggle="dropdown"
-              class="dropdown-toggle"
-              aria
-            >
-              ValpoSystems Capacitación
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">Capacitacion</li>
-              <li class="dropdown-item">Nuestros Cursos</li>
-              <li class="dropdown-item">Política de Calidad</li>
-            </ul>
-          </li>
-          <li class="col">Contacto</li>
-        </ul>
-      </nav>
+      <!--final de la barra de navegación-->
     </header>
     <main>
       <!-- div con un background-img -->
-      <div>
-        <h1>Contacto</h1>
+      <div class="containerBannerContacto">
+        <h1 class="tituloContacto">Contáctanos</h1>
       </div>
       <!-- Formulario de contacto -->
-      <div class="row">
-        <div class="col-6">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-12 col-md-6">
           <form action="" class="row">
-            <h2 class="text-center">Formulario de contacto</h2>
-            <p>Deja tus datos y te contactaremos a la brevedad</p>
-            <label for="nombre" class="col-">Nombre</label>
-            <input type="text" id="nombre" />
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" />
-            <label for="email">Email</label>
-            <input type="text" id="email" />
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje"></textarea>
+            <h2 class="text-center mt-3">Formulario de contacto</h2>
+            <p class="text-center">
+              Deja tus datos y te contactaremos a la brevedad
+            </p>
+            <div class="justify-content-center">
+              <div class="mb-6 md-6 row mb-4">
+                <label for="nombre" class="col-12 col-md-12 ms-5">Nombre</label>
+                <input class="col-10 ms-5" type="text" id="nombre" />
+              </div>
+              <div class="mb-3 row mb-4">
+                <label class="col-12 col-md-12 ms-5" for="apellido"
+                  >Apellido</label
+                >
+                <input class="col-10 col-md-6 ms-5" type="text" id="apellido" />
+              </div>
+              <div class="mb-3 row mb-4">
+                <label class="col-12 col-md-12 ms-5" for="email">Email</label>
+                <input class="col-10 col-md-6 ms-5" type="text" id="email" />
+              </div>
+              <div class="mb-3 row">
+                <label class="col-10 ms-5" for="mensaje">Mensaje</label>
+                <textarea class="col-10 col-md-6 ms-5" id="mensaje"></textarea>
+              </div>
+            </div>
           </form>
         </div>
         <!-- informacion de contacto -->
-        <div class="col-6">
-          <h1>Informacion</h1>
-          <!-- Ubicacion -->
-          <div>
-            <i class="bi bi-geo-alt"></i>
-            <div>
-              <p>Huerfanos 863, Edificio España</p>
-              <p>Oficina 612 | Santiago.</p>
-              <p>Carrera 13 # 90-17</p>
-              <p>Bogota Colombia</p>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1 class="text-center">Informacion</h1>
+            <!-- Ubicacion -->
+            <div class="row">
+              <div
+                class="col-6 col-md-3 d-flex justify-content-center align-items-center"
+              >
+                <i class="bi bi-geo-alt ubicacion"></i>
+              </div>
+              <div
+                class="col-6 col-md-3 align-items-center justify-content-center"
+              >
+                <p>Huerfanos 863, Edificio España</p>
+                <p>Oficina 612 | Santiago.</p>
+                <p>Carrera 13 # 90-17</p>
+                <p>Bogota Colombia</p>
+              </div>
             </div>
           </div>
           <!-- Contacto -->
