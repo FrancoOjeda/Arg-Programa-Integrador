@@ -25,3 +25,9 @@
     color: aquamarine
 }
 
+.mensaje-error{
+    color: red;
+}
+.campo-invalido{
+    border: 1px red solid;
+}
