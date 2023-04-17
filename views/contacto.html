@@ -16,6 +16,7 @@
   <script src="../validaciones/validationForm.js"></script>
   <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script> <!--libreriapdf cdn-->
   <script src="/Arg-Programa-Integrador/views/reclamos.js"></script>
+  <script src="/Arg-Programa-Integrador/validaciones/validacion-modal.js"></script> <!--val-modal-->
   <title>valposystems</title>
 </head>
 
@@ -237,74 +238,77 @@
           <div class="modal-body" id="modalBody">
             <div class="" id="FormularioModal">
               <!--formulario modal-->
-              <form action="#" class="row" id="">
+              <form action="" class="row" id="form-modal">
                 <h1 class="text-center">Formulario de contacto</h1>
                 <p class="text-center">
                   Deja tus datos y te contactaremos a la brevedad
                 </p>
                 <div>
                   <div class="mb-6 md-6 row mb-4 offset-3">
-                    <label for="nombre" class="text-start px-5">
+                    <label for="nombreM" class="text-start px-5 my-1">
                       Nombre
                     </label>
-                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="nombre" />
-                    <p id="mensaje-error-nombre" class="d-none ms-5 mensaje-error">
+                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="nombreM" />
+                    <p id="mensaje-error-nombreM" class="d-none ms-5 mensaje-error">
                       Campo obligatorio
                     </p>
                   </div>
                   <div class="mb-3 row mb-4 offset-3">
-                    <label class="text-start px-5" for="apellido">
+                    <label class="text-start px-5 my-1" for="apellidoM">
                       Apellido
                     </label>
-                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="apellido" />
-                    <p id="mensaje-error-apellido" class="d-none ms-5 mensaje-error">
+                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="apellidoM" />
+                    <p id="mensaje-error-apellidoM" class="d-none ms-5 mensaje-error">
                       Campo obligatorio
                     </p>
                   </div>
                   <div class="mb-3 row mb-4 offset-3">
-                    <label class="text-start px-5" for="email">
+                    <label class="text-start px-5 my-1" for="telefonoM">
                       Teléfono
                     </label>
-                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="email" />
-                    <p id="mensaje-error-email" class="d-none ms-5 mensaje-error">
+                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="telefonolM" />
+                    <p id="mensaje-error-telefonolM" class="d-none ms-5 mensaje-error">
                       Campo obligatorio
                     </p>
                   </div>
                   <div class="mb-3 row mb-4 offset-3">
-                    <label class="text-start px-5" for="email">
+                    <label class="text-start px-5 my-1" for="emailM">
                       Email
                     </label>
-                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="email" />
-                    <p id="mensaje-error-email" class="d-none ms-5 mensaje-error">
+                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="emailM" />
+                    <p id="mensaje-error-emailM" class="d-none ms-5 mensaje-error ">
                       Campo obligatorio
                     </p>
                   </div>
                   <div class="mb-3 row mb-4 offset-3">
-                    <label class="text-start px-5" for="email">
+                    <label class="text-start px-5 my-1" for="ID-modal">
                       ID segun corresponda
                     </label>
-                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="email" />
-                    <p id="mensaje-error-email" class="d-none ms-5 mensaje-error">
+                    <input class="shadow-sm p-2 rounded col-10 col-md-6 ms-5" type="text" id="ID-modal" />
+                    <p id="mensaje-error-ID" class="d-none ms-5 mensaje-error">
                       Campo obligatorio
                     </p>
                   </div>
-                  <div class="mb-3 row mb-4 offset-3">
-                    <select class="shadow-sm p-2 rounded col-10 col-md-6 ms-5 my-3" name="Motivo-reclamo" id="">
-                      <option value="Servicios"></option>
-                      <option value="Productos"></option>
-                      <option value="Soporte"></option>
-                      <option value="Otros"></option>
+                  <div class=" row offset-3">
+                    <label class="text-start px-5" for="Motivo-reclamo">
+                      Seleccione un motivo
+                    </label>
+                    <select class="shadow-sm p-2 rounded col-10 col-md-6 ms-5 my-1" name="Motivo-reclamo" id="">
+                      <option value="Servicios">Servicios</option>
+                      <option value="Productos">Productos</option>
+                      <option value="Soporte">Soporte</option>
+                      <option value="Otros">Otros</option>
                     </select>
                   </div>
                   <div class="mb-3 row offset-3">
-                    <label class="text-start px-5" for="mensaje">Mensaje</label>
-                    <textarea class="shadow-sm p-3 rounded col-10 col-md-6 ms-5" id="mensaje"></textarea>
-                    <p id="mensaje-error-mensaje" class="d-none ms-5 mensaje-error">
+                    <label class="text-start px-5" for="mensajeM">Mensaje</label>
+                    <textarea class="shadow-sm p-3 rounded col-10 col-md-6 ms-5" id="mensajeM"></textarea>
+                    <p id="mensaje-error-mensajeM" class="d-none ms-5 mensaje-error">
                       Campo obligatorio
                     </p>
                   </div>
                 </div>
-                <button class="col-1 col-md-2 mx-auto p-3">Enviar</button>
+                <button type="submit" class="col-1 col-md-2 mx-auto p-3">Enviar</button>
               </form>
             </div>
           </div>
